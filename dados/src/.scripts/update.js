@@ -9,7 +9,7 @@ import os from 'os';
 import { promisify } from 'util';
 const execAsync = promisify(exec);
 
-const REPO_URL = 'https://github.com/hiudyy/nazuna.git';
+const REPO_URL = 'https://github.com/jufreefire';
 const BACKUP_DIR = path.join(process.cwd(), `backup_${new Date().toISOString().replace(/[:.]/g, '_').replace(/T/, '_')}`);
 const TEMP_DIR = path.join(process.cwd(), 'temp_nazuna');
 const isWindows = os.platform() === 'win32';
@@ -59,8 +59,8 @@ function setupGracefulShutdown() {
 
 async function displayHeader() {
   const header = [
-    `${colors.bold}🚀 Nazuna - Atualizador${colors.reset}`,
-    `${colors.bold}👨‍💻 Criado por Hiudy${colors.reset}`,
+    `${colors.bold}💋 Big Momma - Atualizador${colors.reset}`,
+    `${colors.bold}˚.🎀༘⋆ Criado por ju :p${colors.reset}`,
   ];
 
   printSeparator();
@@ -78,7 +78,7 @@ async function checkRequirements() {
     await execAsync('git --version');
     printDetail('✅ Git encontrado.');
   } catch (error) {
-    printWarning('⚠️ Git não encontrado! É necessário para atualizar o Nazuna.');
+    printWarning('⚠️ Git não encontrado! É necessário para atualizar a Bot.');
     if (isWindows) {
       printInfo('📥 Instale o Git em: https://git-scm.com/download/win');
     } else if (os.platform() === 'darwin') {
@@ -197,7 +197,7 @@ async function createBackup() {
 }
 
 async function downloadUpdate() {
-  printMessage('📥 Baixando a versão mais recente do Nazuna...');
+  printMessage('📥 Baixando a versão mais recente da Big Momma...');
 
   try {
     // Validate temp directory path
@@ -697,7 +697,7 @@ async function main() {
 
     printSeparator();
     printMessage('🎉 Atualização concluída com sucesso!');
-    printMessage('🚀 Inicie o bot com: npm start');
+    printMessage('🚀 Inicie a bot com: npm start');
     printSeparator();
   } catch (error) {
     printSeparator();
