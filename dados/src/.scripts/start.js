@@ -104,7 +104,7 @@ am startservice --user 0 \\
 
 function setupGracefulShutdown() {
   const shutdown = () => {
-    mensagem('🛑 Encerrando o Nazuna... Até logo!');
+    mensagem('🛑 Encerrando a Big Momma... Até logo!');
     if (botProcess) {
       botProcess.removeAllListeners();
       botProcess.kill();
@@ -126,7 +126,7 @@ function setupGracefulShutdown() {
 
 async function displayHeader() {
   const header = [
-    `${colors.bold}🚀 Nazuna - Conexão WhatsApp${colors.reset}`,
+    `${colors.bold}💋 Big Momma Bot - Conexão WhatsApp${colors.reset}`,
     `${colors.bold}📦 Versão: ${version}${colors.reset}`,
   ];
 
@@ -233,12 +233,12 @@ async function promptConnectionMethod() {
     output: process.stdout,
   });
 
-  console.log(`${colors.yellow}🔧 Escolha o método de conexão:${colors.reset}`);
+  console.log(`${colors.yellow}💋 Escolha o método de conexão:${colors.reset}`);
   console.log(`${colors.yellow}1. 📷 Conectar via QR Code${colors.reset}`);
   console.log(`${colors.yellow}2. 🔑 Conectar via código de pareamento${colors.reset}`);
   console.log(`${colors.yellow}3. 🚪 Sair${colors.reset}`);
 
-  const answer = await rl.question('➡️ Digite o número da opção desejada: ');
+  const answer = await rl.question('🎀 Digite o número da opção desejada: ');
   console.log();
   rl.close();
 
