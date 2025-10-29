@@ -31,8 +31,8 @@ const print = {
     separator: () => console.log(`${colors.blue}=================================================${colors.reset}`),
     header: () => {
         print.separator();
-        console.log(`${colors.bold}🚀 Configurador Gênesis Nazuna - Versão ${version}${colors.reset}`);
-        console.log(`${colors.bold}👨‍💻 Criado por Hiudy${colors.reset}`);
+        console.log(`${colors.bold}🚀 Configurado por ju :p - Versão ${version}${colors.reset}`);
+        console.log(`${colors.bold}🎀 Criado por ju :p{colors.reset}`);
         print.separator(); console.log();
     }
 };
@@ -278,10 +278,11 @@ async function main() {
         print.info('📝 Lembre-se de instalar com: npm run config:install');
     }
 
-    print.message(`🎉 Nazuna configurado e pronto para uso! Versão: ${version}`);
+    print.message(`💋 Big Momma configurada e pronta para uso! Versão: ${version}`);
 }
 
 main().catch((error) => {
     print.warning(`❌ Erro fatal: ${error.message}`);
     process.exit(1);
 });
+
